@@ -55,8 +55,8 @@ if __name__ == '__main__':
 
     # Please note, I updated the dir to "Iris" to evaluate images from Iris test results
     # Change back in case you're in the "Eurecom" directory
-    os.makedirs("GANs_Research/my_imps/research_models/v3/evaluation/Iris/%s/fake_B" % opt.experiment, exist_ok=True)
-    os.makedirs("GANs_Research/my_imps/research_models/v3/evaluation/Iris/%s/real_B" % opt.experiment, exist_ok=True)
-    os.makedirs("GANs_Research/my_imps/research_models/v3/evaluation/Iris/%s/real_A" % opt.experiment, exist_ok=True)
+    os.makedirs("quant_eval/Iris/%s/fake_B" % opt.experiment, exist_ok=True)
+    os.makedirs("quant_eval/Iris/%s/real_B" % opt.experiment, exist_ok=True)
+    os.makedirs("quant_eval/Iris/%s/real_A" % opt.experiment, exist_ok=True)
 
     main(opt.inpath, opt.RA_out, opt.RB_out, opt.FB_out)

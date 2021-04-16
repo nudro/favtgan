@@ -53,8 +53,8 @@ if __name__ == '__main__':
     opt = parser.parse_args()
     print(opt)
 
-    os.makedirs("GANs_Research/my_imps/research_models/v3/evaluation/Eurecom/%s/fake_B" % opt.experiment, exist_ok=True)
-    os.makedirs("GANs_Research/my_imps/research_models/v3/evaluation/Eurecom/%s/real_B" % opt.experiment, exist_ok=True)
-    os.makedirs("GANs_Research/my_imps/research_models/v3/evaluation/Eurecom/%s/real_A" % opt.experiment, exist_ok=True)
+    os.makedirs("quant_eval/Eurecom/%s/fake_B" % opt.experiment, exist_ok=True)
+    os.makedirs("quant_eval/Eurecom/%s/real_B" % opt.experiment, exist_ok=True)
+    os.makedirs("quant_eval/Eurecom/%s/real_A" % opt.experiment, exist_ok=True)
 
     main(opt.inpath, opt.RA_out, opt.RB_out, opt.FB_out)

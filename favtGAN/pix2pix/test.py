@@ -22,10 +22,6 @@ import torch.nn as nn
 import torch.nn.functional as F
 import torch
 
-#################
-# STOP!! CHANGE THE GENERATOR .PTH, 490 FOR TRAINING 500 EPOCHS, 990 FOR TRAINING 1000 EPOCHS!!
-# And 19990 for 2000 EPOCHS!!
-#################
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--epoch", type=int, default=0, help="epoch to start training from")
