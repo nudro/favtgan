@@ -1,5 +1,18 @@
 # favtGAN - Facial Visible Translation GAN
 
+Here you will find information on how to download the four datasets used in the experiments and how to process them, in addition to running any of the four favtGAN implementations, and analyzing the test results using SSIM and PSNR. Models were built in PyTorch 1.6.0.
+
+## Abstract
+Thermal images reveal medically important physiological information about human stress, signs of inflammation, and emotional mood that cannot be seen on visible images. Providing a method to generate thermal faces from visible images would be highly valuable for the telemedicine community in order to show this medical information. To the best of our knowledge, there are limited works on visible-to-thermal (VT) face translation, and many current works go the opposite direction to generate visible faces from thermal surveillance images (TV) for law enforcement applications. As a result, we introduce favtGAN, a VT GAN which uses the pix2pix image translation model with an auxiliary sensor label prediction network for generating thermal faces from visible images. Since most TV methods are trained on only one data source drawn from one thermal sensor, we com- bine datasets from faces and cityscapes. These combined data are captured from similar sensors in order to boot- strap the training and transfer learning task, especially valuable because visible-thermal face datasets are limited. Experiments on these combined datasets show that favtGAN demonstrates an increase in SSIM and PSNR scores of generated thermal faces, compared to training on a single face dataset alone.
+
+<img src='pics/fig1.png'>
+
+<img src='pics/fig2.png'>
+
+## Install
+
+`git clone git@github.com:nudro/favtgan.git`
+
 `pip install requirements.txt`
 
 ## Datasets
