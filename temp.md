@@ -25,3 +25,8 @@ Here we also show that LPIPS is the best measure for evaluating perceptual quali
 We use the TFC-GAN 4P variant. From it, we ablate all stability parameters. We then ablate temperature loss. We finally ablate all three - stability, temperature, and contrastive patch loss.
 
 <img src=./pics/ablation.png>
+
+### Image Registration
+Many paired datasets are not perfectly ailgned, and out of the box, require manual processing to properly align them. Misaligned datasets can lead to poor generation results for image-to-image translation tasks. Our next research steps are to investigate the properties of image registration inherent in the TFC-GAN. Below are qualitative results that demonstrate promise in using paired images that differ in scale and resolution, whilst achieving a final generated image that is aligned, scaled, and generated with high quality.
+
+<img src=./pics/image_reg.png>
